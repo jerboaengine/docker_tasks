@@ -1,0 +1,25 @@
+diff --git a/regression/usr/reg_basic_mt/reg_basic_mt.c b/regression/usr/reg_basic_mt/reg_basic_mt.c
+index 9765b4b..ef6bd70 100644
+--- a/regression/usr/reg_basic_mt/reg_basic_mt.c
++++ b/regression/usr/reg_basic_mt/reg_basic_mt.c
+@@ -53,13 +53,13 @@ struct params {
+ };
+ 
+ struct program_vars {
+-	char		client_threads_num[8];
+-	char		server_threads_num[8];
+-	char		client_dlen[8];
+-	char		server_dlen[8];
+-	char		queue_depth[8];
+-	char		client_disconnect_nr[8];
+-	char		server_disconnect_nr[8];
++	char		client_threads_num[16];
++	char		server_threads_num[16];
++	char		client_dlen[16];
++	char		server_dlen[16];
++	char		queue_depth[16];
++	char		client_disconnect_nr[16];
++	char		server_disconnect_nr[16];
+ 	unsigned long	seed;
+ 	unsigned long	test_num;
+ };

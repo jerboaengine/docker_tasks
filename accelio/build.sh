@@ -1,5 +1,6 @@
 #!/bin/bash
-cd accelio
+cd accelio-1.5
 ./autogen.sh
 ./configure
 make
+./make-deb.sh

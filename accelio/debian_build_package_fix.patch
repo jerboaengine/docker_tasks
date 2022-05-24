@@ -1,0 +1,13 @@
+diff --git a/make-deb.sh b/make-deb.sh
+index 4b2b87f..f277d39 100755
+--- a/make-deb.sh
++++ b/make-deb.sh
+@@ -12,7 +12,7 @@ rm -fr $releasedir
+ mkdir -p $releasedir
+ 
+ vers=$(git describe --match "v*" | sed s/^v//)
+-name="libxio-$vers"
++name="accelio_$vers"
+ git archive --prefix "$name/" --format tar.gz -o $releasedir/${name}.orig.tar.gz HEAD
+ tar -C $releasedir -xzf $releasedir/${name}.orig.tar.gz
+ cd $releasedir/$name
